@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtVersion"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:hint="android version..."
+        android:autofillHints=""></EditText>
+
+    <EditText
+        android:id="@+id/txtCodeName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:hint="android code name..."
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="53dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:onClick="addRow"
+        android:text="Add"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TableLayout
+        android:id="@+id/tblData"
+        android:layout_width="409dp"
+        android:layout_height="575dp"
+        android:layout_marginTop="150dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="155dp"
+        >
+<TableRow>
+
+    <TextView
+        android:text="Version">
+
+    </TextView>
+    <TextView
+        android:text="Codename">
+
+    </TextView>
+</TableRow>
+    </TableLayout>
+</RelativeLayout>
